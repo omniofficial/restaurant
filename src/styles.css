@@ -37,14 +37,60 @@ button.active {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
     max-width: 1500px;
-    margin: 2rem auto;
-    padding: 2rem;
+    margin: 5rem auto;
+    padding: 3rem 130px;
     background-color: #ffcd55;
-    border-radius: 10px;
+    border-radius: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
 
-.title {
+/* Use for initial headings under each tab*/
+.main-title-container {
+    display: inline-block;
+    border: 15px solid #f44409;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.main-section-title {
+    margin: 0;
+    font-size: 30px;
     font-family: "Chewy", cursive;
+}
+
+/* Use for subheadings, does not span across whole content div */
+.sub-title-container {
+    border: 15px solid #df7d19;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sub-section-title {
+    margin: 0;
+    font-size: 15px;
+    font-family: "Chewy", cursive;
+}
+
+.content-container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    border: 15px solid #f44409;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.generic-container {
+    border: 15px solid #df7d19;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
 }
