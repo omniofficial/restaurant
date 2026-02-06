@@ -28,25 +28,37 @@ export function homepage() {
     const contentContainer = document.createElement("div");
     contentContainer.classList.add("content-container");
 
-    /* Inside of content-container, make three generic containers */
-    const genericContainer = document.createElement("div");
-    genericContainer.classList.add("generic-container");
+    /* Generic container helper function */
+    function createGenericContainer(titleText, bodyText) {
+        const genericContainer = document.createElement("div");
+        genericContainer.classList.add("generic-container");
 
-    /* Inside of generic-container, add text div */
-    const text = document.createElement("div");
-    text.classList.add("text");
+        /* Inside of generic-container, assign what I passed in into divs */
+        const text = document.createElement("div");
+        text.classList.add("text");
 
-    const p = document.createElement("p");
-    p.textContent = "lorem";
+        const p = document.createElement("p");
+        p.textContent = titleText;
 
-    const h2 = document.createElement("h2");
-    h2.textContent = "Overview";
+        const h2 = document.createElement("h2");
+        h2.textContent = bodyText;
 
-    /* Append my elements to content-container. Then append content-container to content.*/
-    text.appendChild(h2);
-    text.appendChild(p);
-    genericContainer.appendChild(text);
-    contentContainer.appendChild(genericContainer);
+        text.appendChild(h2);
+        text.appendChild(p);
+        genericContainer.appendChild(text);
+        return genericContainer;
+    }
+
+    /* Call helper function */
+    contentContainer.appendChild(
+        createGenericContainer("Overview", "lorem ipsum blah blah blah"),
+    );
+    contentContainer.appendChild(
+        createGenericContainer("Hours", "lorem ipsum blah blah blah"),
+    );
+    contentContainer.appendChild(
+        createGenericContainer("Location", "lorem ipsum blah blah blah"),
+    );
 
     content.appendChild(contentContainer);
 }
