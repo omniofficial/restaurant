@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Chewy&family=Fredoka+One&display=swap");
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@ body {
     background-position: center; /* center the image */
     background-repeat: no-repeat;
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: "Baloo 2", sans-serif;
 }
 
 nav {
@@ -14,7 +16,7 @@ nav {
     gap: 14px;
     align-items: center;
     justify-content: center;
-    background-color: #7d02e2f3;
+    background-color: #ffcd55;
     padding: 20px;
 }
 
@@ -24,14 +26,25 @@ button {
     font-size: 1.1rem; /* slightly larger text */
     border-radius: 8px; /* rounded corners */
     cursor: pointer;
+    font-family: "Fredoka One", sans-serif;
 }
 
 /* Active tab/button */
 button.active {
-    background-color: orange; /* highlighted when selected */
+    background-color: #ff9933; /* highlighted when selected */
     color: white;
-    border-color: orange;
+    border-color: #df7d19;
 }
 
 #content {
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffcd55;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: "Chewy", cursive;
 }
