@@ -98,6 +98,7 @@ button.active {
 
 .generic-container {
     display: flex;
+    flex-direction: column;
     border: 15px solid #df7d19;
     padding: 5px;
     border-radius: 20px;
