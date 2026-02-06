@@ -2,4 +2,9 @@
 
 export function menu() {
     console.log("menu module is running");
+    // Grab content div
+    const content = document.getElementById("content");
+
+    // Clear previous content
+    content.textContent = "";
 }

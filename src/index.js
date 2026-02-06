@@ -6,11 +6,6 @@ import { contact } from "./modules/contact.js";
 // Load homepage by default
 homepage();
 
-// Tab switcher logic here. If user clicks a certain button, either run homepage, menu, or contact. Add event listeners.
-homepage();
-menu();
-contact();
-
 // Active button logic for color
 const buttons = document.querySelectorAll("nav button");
 
@@ -21,4 +16,24 @@ buttons.forEach((button) => {
         // Add 'active' to clicked button
         button.classList.add("active");
     });
+});
+
+// Tab switcher logic here. If user clicks a certain button, either run homepage, menu, or contact. Add event listeners.
+
+// Get buttons
+const homeBtn = document.getElementById("home-btn");
+const menuBtn = document.getElementById("menu-btn");
+const contactBtn = document.getElementById("contact-btn");
+
+// Add event listeners for each button.
+homeBtn.addEventListener("click", () => {
+    homepage();
+});
+
+menuBtn.addEventListener("click", () => {
+    menu();
+});
+
+contactBtn.addEventListener("click", () => {
+    contact();
 });
