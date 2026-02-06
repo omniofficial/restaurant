@@ -36,6 +36,7 @@ button.active {
     border-color: #df7d19;
 }
 
+/* Has child elements main-section-title and content-container */
 #content {
     display: flex;
     flex-direction: column;
