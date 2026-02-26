@@ -8,7 +8,7 @@ export function menu() {
     // Clear previous content
     content.textContent = "";
 
-    /* Generic container helper function */
+    /* Generic container helper function (each menu item) */
     function createGenericContainer(titleText, bodyText) {
         const genericContainer = document.createElement("div");
         genericContainer.classList.add("generic-container");
