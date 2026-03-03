@@ -33,19 +33,17 @@ export function homepage() {
         const genericContainer = document.createElement("div");
         genericContainer.classList.add("generic-container");
 
-        /* Inside of generic-container, assign what I passed in into divs */
-        const text = document.createElement("div");
-        text.classList.add("text");
+        /* Inside of each generic container, I want the following: */
+        const heading = document.createElement("h1");
+        heading.textContent = titleText;
+        heading.classList.add("text");
+        genericContainer.appendChild(heading);
 
-        const p = document.createElement("p");
-        p.textContent = titleText;
+        const description = document.createElement("p");
+        description.textContent = bodyText;
+        description.classList.add("text");
+        genericContainer.appendChild(description);
 
-        const h2 = document.createElement("h2");
-        h2.textContent = bodyText;
-
-        text.appendChild(h2);
-        text.appendChild(p);
-        genericContainer.appendChild(text);
         return genericContainer;
     }
 
