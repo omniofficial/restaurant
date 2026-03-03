@@ -1,7 +1,9 @@
 // MENU - Creates a div element, adds the appropriate content and styles to that element and then appends it to the DOM.
 
 import lollipopImage from "../images/lollipop.png";
-import 
+import tootsierollImage from "../images/tootsieroll.png";
+import candycaneImage from "../images/candycane.png";
+import candyappleImage from "../images/candyapple.png";
 
 export function menu() {
     console.log("menu module is running");
@@ -76,7 +78,12 @@ export function menu() {
     );
 
     contentContainer.appendChild(
-        createMenuItem("Candy Cane", "A minty candy cane", "$1", candycaneImage),
+        createMenuItem(
+            "Candy Cane",
+            "A minty candy cane",
+            "$1",
+            candycaneImage,
+        ),
     );
 
     contentContainer.appendChild(
