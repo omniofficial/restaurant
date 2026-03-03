@@ -116,6 +116,7 @@ button.active {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    white-space: pre-line;
 }
 
 .text p {
@@ -125,4 +126,3 @@ button.active {
 .text h2 {
     text-align: center;
 }
-

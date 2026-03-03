@@ -49,13 +49,24 @@ export function homepage() {
 
     /* Call helper function */
     contentContainer.appendChild(
-        createGenericContainer("Overview", "lorem ipsum blah blah blah"),
+        createGenericContainer(
+            "Overview",
+            "Welcome to Adrian's Candy Store! We offer a wide variety of sweet treats, from classic candies to unique gourmet confections. Our mission is to bring a smile to every customer with high quality, handcrafted sweets.",
+        ),
     );
+
     contentContainer.appendChild(
-        createGenericContainer("Hours", "lorem ipsum blah blah blah"),
+        createGenericContainer(
+            "Hours",
+            "Monday - Friday: 10:00 AM - 8:00 PM\nSaturday: 11:00 AM - 9:00 PM\nSunday: 12:00 PM - 6:00 PM",
+        ),
     );
+
     contentContainer.appendChild(
-        createGenericContainer("Location", "lorem ipsum blah blah blah"),
+        createGenericContainer(
+            "Location",
+            "123 Sweet Tooth Lane, Sugarville, CA 90210\nCome visit us and explore our delicious candy collection!",
+        ),
     );
 
     content.appendChild(contentContainer);
