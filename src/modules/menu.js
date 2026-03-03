@@ -8,24 +8,25 @@ export function menu() {
     // Clear previous content
     content.textContent = "";
 
+    /* ----------- MAKE MENU TITLE CONTAINER + TEXT ----------- */
+    const mainTitleContainer = document.createElement("div");
+    mainTitleContainer.classList.add("main-title-container");
+
+    const mainSectionTitle = document.createElement("div");
+    mainSectionTitle.classList.add("main-section-title");
+
+    const heading = document.createElement("h1");
+    heading.textContent = "Menu Items";
+
+    mainSectionTitle.appendChild(heading);
+    mainTitleContainer.appendChild(mainSectionTitle);
+
+    content.appendChild(mainTitleContainer);
+
+    /* ----------- MAKE CONTENT CONTAINER + ELEMENTS ----------- */
+    const contentContainer = document.createElement("div");
+    contentContainer.classList.add("content-container");
+
     /* Generic container helper function (each menu item) */
-    function createGenericContainer(titleText, bodyText) {
-        const genericContainer = document.createElement("div");
-        genericContainer.classList.add("generic-container");
-
-        /* Inside of generic-container, assign what I passed in into divs */
-        const text = document.createElement("div");
-        text.classList.add("text");
-
-        const p = document.createElement("p");
-        p.textContent = titleText;
-
-        const h2 = document.createElement("h2");
-        h2.textContent = bodyText;
-
-        text.appendChild(h2);
-        text.appendChild(p);
-        genericContainer.appendChild(text);
-        return genericContainer;
-    }
+    function createMenuItem(title, description, price, image) {}
 }
